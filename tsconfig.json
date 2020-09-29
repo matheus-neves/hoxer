@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": "./src",
     "lib": [
       "dom",
       "dom.iterable",
@@ -8,12 +10,13 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": false,
+    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "esnext",
+    "module": "commonjs",
     "moduleResolution": "node",
+    "target": "esnext",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve"
