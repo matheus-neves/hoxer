@@ -10,8 +10,7 @@
     "airbnb",
     "plugin:@typescript-eslint/recommended",
     "prettier/@typescript-eslint",
-    "prettier/airbnb",
-    "prettier/react"
+    "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -23,6 +22,7 @@
   },
   "plugins": [
     "react",
+    "react-hooks",
     "@typescript-eslint",
     "prettier"
   ],
@@ -31,7 +31,17 @@
     "space-before-function-paren": "off",
     "react/prop-types": "off",
 
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-filename-extension": [1, {"extensions": [".tsx"] }],
+
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": ["error"]
+
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
   }
+
 }
