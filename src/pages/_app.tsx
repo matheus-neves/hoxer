@@ -1,12 +1,14 @@
 import React from 'react';
 import { AppProps } from 'next/app';
+import { Provider } from 'react-redux';
+import store from '@/store';
 import GlobalStyles from '@/styles/GlobalStyles';
 
-const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => (
-  <>
+const App: React.FC<AppProps> = ({ Component, pageProps }) => (
+  <Provider store={store}>
     <Component {...pageProps} />
     <GlobalStyles />
-  </>
+  </Provider>
 );
 
-export default MyApp;
+export default App;
