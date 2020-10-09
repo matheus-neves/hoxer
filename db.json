@@ -1,3 +1,27 @@
 {
-  "users": []
+  "users": [
+    {
+      "email": "teste@email.com",
+      "password": "$2a$10$8GYFlxiO8HA6gC1BY2wiIu/0.31R061tpfYockrtGyqYT7FflqEYC",
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Lorem ipsum",
+      "fabricationDate": "",
+      "perishable": false,
+      "validateDate": "1556322834",
+      "price": 12.9
+    },
+    {
+      "id": 2,
+      "name": "Lorem ipsum",
+      "fabricationDate": "1556322834",
+      "perishable": true,
+      "validateDate": "1556322834",
+      "price": 12.9
+    }
+  ]
 }
